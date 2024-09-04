@@ -11,3 +11,13 @@ function getComputerChoice () {
     } 
     return result;
 }
+
+function getHumanChoice() {
+    let humanChoice = prompt("Please enter your choice:");
+
+    if (humanChoice.toLowerCase() === "rock" || humanChoice.toLowerCase() === "paper" || humanChoice.toLowerCase() === "scissors") {
+        return humanChoice;
+    } else {
+        getHumanChoice();
+    }
+}
